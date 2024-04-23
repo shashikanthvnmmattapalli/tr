@@ -46,6 +46,12 @@ jobs:
       run: |
     
         terraform plan --var-file="dev_param.tfvars"
+    - name: Terraform apply
+      id: tf-apply
+      run: |
+    
+        terraform apply --var-file="dev_param.tfvars" -auto-approve
+        
         
  
  
