@@ -2,6 +2,10 @@ name: 'Terraform Plan/Apply'
 
 on:
   push:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 #These environment variables are used by the terraform azure provider to setup OIDD authenticate. 
 env:
