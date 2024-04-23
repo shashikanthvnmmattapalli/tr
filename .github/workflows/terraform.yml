@@ -2,9 +2,6 @@ name: 'Terraform Plan/Apply'
 
 on:
   push:
-    branches:
-    - main
-
 
 #These environment variables are used by the terraform azure provider to setup OIDD authenticate. 
 env:
